@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+}
+
+.bg-color {
+  background-color: #B3ECEC;
+}
+
+ul.container {
+  text-align: center;
+}
+
+li.mr-auto {
+  display: inline;
+}
+
+.logo {
+  margin: 0 10px;
+}
+
+.navbar-brand {
+  text-shadow: 2px 2px 3px #f9f0ff;
+}
+/* Jumbotron original background color #e9ecef */
+
+.jumbotron {
+  background-color: #f9f0fa;
+}
+.jumboContainer {
+  display: flex;
+  align-items: center;
+}
+
+.jumboText {
+  text-align: center;
+}
+
+.jumboText h1 {
+  text-shadow: 2px 2px 4px gray;
+}
+
+.jumboText p {
+  font-size: 1.4rem;
+  text-shadow: 1.5px 1.5px 2.5px gray;
+}
+
+.jumboText h1 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  padding-bottom: .5rem;
+}
+
+.rfDifference {
+  display: flex;
+  flex-flow: row;
+}
+
+.DiffHeading {
+  text-align: center;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.diffContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem;
+}
+
+.DiffText {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  margin-left: 1rem;
+}
+
+.DiffText p {
+  font-size: 1.2rem;
+}
+
+.DiffPic {
+  box-shadow: -3px 3px 1.5px gray;
+}
