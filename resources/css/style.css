@@ -57,6 +57,8 @@ li.mr-auto {
 
 .DiffHeading {
   text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #f9f0fa;
 }
 
 .FlexContainer {
@@ -68,6 +70,7 @@ li.mr-auto {
   display: flex;
   flex-wrap: nowrap;
   margin: 2rem;
+  max-width: 450px;
 }
 
 .DiffText {
@@ -79,6 +82,13 @@ li.mr-auto {
 
 .DiffText p {
   font-size: 1.2rem;
+  text-align: center;
+  /*transition: font-weight .4s ease-in-out;
+
+    &:hover,
+    &.be-bold {
+        font-weight: bold;
+        cursor: pointer;*/
 }
 
 .DiffPic {
