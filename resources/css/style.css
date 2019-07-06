@@ -8,6 +8,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 640px;
   height: 360px;
   padding: 1rem;
+  margin: 10px;
+  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
 .pictureOfKaty {
@@ -15,9 +17,30 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
   height: 400px;
   padding: 1rem;
+  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
 /* HEADER FOOTER */
+ul.container {
+  text-align: center;
+}
+
+li.mr-auto {
+  display: inline;
+}
+
+.logo {
+  margin: 0 10px;
+}
+
+.navbar-brand.text {
+  transition: color 1s ease;
+  text-shadow: 1px 2px 3px #998099;
+  color: #5d6465;
+}
+.text:hover {
+  color: #000000;
+}
 .fa {
   padding: .5rem;
 }
@@ -35,26 +58,7 @@ body {
 }
 
 /* INDEX */
-ul.container {
-  text-align: center;
-}
 
-li.mr-auto {
-  display: inline;
-}
-
-.logo {
-  margin: 0 10px;
-}
-
-.text {
-  transition: color 1s ease;
-  text-shadow: 2px 2px 3px gray;
-  color: #5d6465;
-}
-.text:hover {
-  color: #000000;
-}
 /* Jumbotron original background color #e9ecef */
 
 .jumboContainer {
@@ -154,4 +158,33 @@ li.mr-auto {
 
 .contactPhoto {
   margin: 10px 0 20px 80px;
+}
+
+/* BENEFITS */
+.starting, .benefits {
+  margin: 5%;
+}
+
+.starting h1 {
+  text-align: center;
+  margin: 12px;
+}
+
+.startingText {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefits h2 {
+  text-align: center;
+}
+
+.benefits h3 {
+  margin: 8px;
+}
+
+.benefits ul {
+  margin-left: 30%;
+  font-size: 1.2rem;
 }
