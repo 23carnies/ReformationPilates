@@ -12,23 +12,43 @@
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
   </head>
   <body>
+
+  <!-- NAVBAR -->
     <header>
-      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-color">
+      <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-color" role="navigation">
         <div class="container">
-          <ul class="navbar-nav mr-auto">
-            <li><img src="resources/images/logoCropped.jpeg" class="logo" width="170" height="50" alt="Logo"></li>
-            <li><a class="navbar-brand" href="index.html">Home</a></li>
-            <li><a class="navbar-brand" href="Instructors.html">Instructors</a></li>
-            <li><a class="navbar-brand" href="Benefits.html">Benefits</a></li>
-            <li><a class="navbar-brand" href="PriceAndSchedule.html">Prices/Schedule</a></li>
-            <li><a class="navbar-brand" href="purchase.html">Purchase</a></li>
-            <li><a class="navbar-brand" href="Contact.html">Contact</a></li>
-          </ul>
+          <a href="index.html"><img src="resources/images/RFLogo.png" class="logo" width="170" height="50" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <!--<li><a class="navbar-brand" href="index.html">Home</a></li>-->
+              <li><a class="navbar-brand" href="Instructors.html">Instructors</a></li>
+              <li><a class="navbar-brand" href="Benefits.html">Benefits</a></li>
+              <li><a class="navbar-brand" href="PriceAndSchedule.html">Prices/Schedule</a></li>
+              <li><a class="navbar-brand" href="purchase.html">Purchase</a></li>
+              <li><a class="navbar-brand" href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
+<!-- FOOTER -->
+    <footer>
+      <nav class="navbar navbar-light navbar-light bg-color-foot" role="navigation">
+        <a class="logo" href="index.html"><img src="resources/images/RFLogo.png" width="170" height="50" alt="Logo"></a>
+        <p>&copy 2019 Reformation Pilates</p>
+        <a href="https://www.facebook.com/ReformationPilatesStudio/"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/katrinaroelle/"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
 
+<!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

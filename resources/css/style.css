@@ -2,10 +2,39 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+/* DIVS TO PUT MEDIA IN */
+.videoHold {
+  background-color: #998099;
+  width: 640px;
+  height: 360px;
+  padding: 1rem;
+}
+
+.pictureOfKaty {
+  background-color: #998099;
+  width: 300px;
+  height: 400px;
+  padding: 1rem;
+}
+
+/* HEADER FOOTER */
+.fa {
+  padding: .5rem;
+}
+/* BACKGROUNDS */
+body {
+  background-color: #D7F3F6;
+}
+
 .bg-color {
+  background-color: #f9f0fa;
+}
+
+.bg-color-foot {
   background-color: #B3ECEC;
 }
 
+/* INDEX */
 ul.container {
   text-align: center;
 }
@@ -18,17 +47,27 @@ li.mr-auto {
   margin: 0 10px;
 }
 
-.navbar-brand {
-  text-shadow: 2px 2px 3px #f9f0ff;
+.text {
+  transition: color 1s ease;
+  text-shadow: 2px 2px 3px gray;
+  color: #5d6465;
+}
+.text:hover {
+  color: #000000;
 }
 /* Jumbotron original background color #e9ecef */
 
-.jumbotron {
-  background-color: #f9f0fa;
-}
 .jumboContainer {
   display: flex;
   align-items: center;
+  background-color: #DEBADD;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .jumboContainer {
+    flex-wrap: wrap;
+  }      /* THIS IS STILL A MESS*/
 }
 
 .jumboText {
@@ -59,6 +98,7 @@ li.mr-auto {
   text-align: center;
   font-weight: bold;
   text-shadow: 1px 1px 2px #f9f0fa;
+  margin-top: 10px;
 }
 
 .FlexContainer {
@@ -66,11 +106,12 @@ li.mr-auto {
   flex-flow: row wrap;
   justify-content: center;
 }
+
 .diffContainer {
   display: flex;
   flex-wrap: nowrap;
   margin: 2rem;
-  max-width: 450px;
+  max-width: 425px;
 }
 
 .DiffText {
@@ -81,7 +122,7 @@ li.mr-auto {
 }
 
 .DiffText p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
   /*transition: font-weight .4s ease-in-out;
 
@@ -92,5 +133,25 @@ li.mr-auto {
 }
 
 .DiffPic {
-  box-shadow: -3px 3px 1.5px gray;
+  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
+}
+
+/* INSTRUCTOR PAGE */
+.instructContainer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.staffIntro {
+  max-width: 700px;
+  padding: 1rem;
+}
+
+/* CONTACT PAGE */
+.address {
+  padding-top: 10px;
+}
+
+.contactPhoto {
+  margin: 10px 0 20px 80px;
 }
