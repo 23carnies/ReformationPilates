@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
-/* DIVS TO PUT MEDIA IN */
+/* DIVS TO PUT MEDIA IN move to correct page when filled*/
 .videoHold {
   background-color: #998099;
   width: 640px;
@@ -20,7 +20,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
-/* HEADER FOOTER */
+@media only screen and (max-width: 400px) {
+  .pictureOfKaty {
+    margin: 0 auto;
+  }
+} /*center on small screen*/
+
+/* -------HEADER FOOTER-------- */
 ul.container {
   text-align: center;
 }
@@ -44,7 +50,8 @@ li.mr-auto {
 .fa {
   padding: .5rem;
 }
-/* BACKGROUNDS */
+
+/* -------BACKGROUNDS-------- */
 body {
   background-color: #D7F3F6;
 }
@@ -57,7 +64,7 @@ body {
   background-color: #B3ECEC;
 }
 
-/* INDEX */
+/* -------INDEX------- */
 
 /* Jumbotron original background color #e9ecef */
 
@@ -68,10 +75,25 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 770px) {
   .jumboContainer {
-    flex-wrap: wrap;
-  }      /* THIS IS STILL A MESS*/
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 770px) {
+  .diffContainer {
+    max-width: 700px;
+  }
+  .DiffText {
+    width: 200%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .jumboPic {
+    width: 50%;
+  }
 }
 
 .jumboText {
@@ -91,6 +113,7 @@ body {
   font-size: 3.4rem;
   font-weight: bold;
   padding-bottom: .5rem;
+  text-shadow: 1.5px 1.5px 2.5px gray;
 }
 
 .rfDifference {
@@ -117,6 +140,11 @@ body {
   margin: 2rem;
   max-width: 425px;
 }
+@media only screen and (max-width: 400px) {
+  .diffContainer {
+    display: block;
+  }
+}
 
 .DiffText {
   display: flex;
@@ -128,39 +156,65 @@ body {
 .DiffText p {
   font-size: 1.3rem;
   text-align: center;
-  /*transition: font-weight .4s ease-in-out;
+  transition: font-weight .2s ease-in-out;
 
     &:hover,
     &.be-bold {
         font-weight: bold;
-        cursor: pointer;*/
+        cursor: pointer;
 }
 
 .DiffPic {
   box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
-/* INSTRUCTOR PAGE */
+/* -------INSTRUCTOR PAGE------- */
 .instructContainer {
   display: flex;
   justify-content: center;
   padding: 1rem;
+  margin-bottom: 10px;
 }
 .staffIntro {
+  min-width: 375px;
   max-width: 700px;
   padding: 1rem;
 }
 
-/* CONTACT PAGE */
-.address {
-  padding-top: 10px;
+/*@media only screen and (max-width: 600px) {
+  .staffIntro img {
+    width: 25%;
+  }   /*  this is not working here either */
+
+
+.staffIntroPic {
+  padding: 20px auto;
+}  /*this is not working*/
+
+/* -------CONTACT PAGE------- */
+img, iframe {
+  width: 100%;
+  height: auto;
 }
 
-.contactPhoto {
-  margin: 10px 0 20px 80px;
+@media only screen and (max-width: 400px) {
+  .row {
+    justify-content: center;
+  }  /* this is not working */
+}  /* get photo/address centered on small screen*/
+  /* add coupon to see who is coming from website/insta/fb*/
+
+@media only screen and (max-width: 400px) {
+  .contactLogo {
+    flex-wrap: wrap;
+  }
+
+  .map {
+    max-width: 300px;
+  }
 }
 
-/* BENEFITS */
+/* -------BENEFITS------- */
 .starting, .benefits {
   margin: 5%;
 }
@@ -179,6 +233,12 @@ body {
 .benefits h2 {
   text-align: center;
 }
+
+@media only screen and (max-width: 400px) {
+  .benefitPic {
+    width: 50%;
+}   /* this is not working either */
+  }
 
 .benefits h3 {
   margin: 8px;
