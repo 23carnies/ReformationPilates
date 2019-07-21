@@ -2,13 +2,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
+}
+
+
 /* DIVS TO PUT MEDIA IN move to correct page when filled*/
 .videoHold {
   background-color: #998099;
   width: 640px;
   height: 360px;
-  padding: 1rem;
-  margin: 10px;
   box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
@@ -37,15 +40,17 @@ li.mr-auto {
 
 .logo {
   margin: 0 10px;
+  box-shadow: none;
 }
 
 .navbar-brand.text {
-  transition: color 1s ease;
-  text-shadow: 1px 2px 3px #998099;
+  transition: color .5s ease;
+  /*text-shadow: 1px 2px 3px #998099;*/
   color: #5d6465;
 }
 .text:hover {
   color: #000000;
+  font-weight: 500;
 }
 .fa {
   padding: .5rem;
@@ -90,18 +95,8 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .jumboPic {
-    width: 50%;
-  }
-}
-
 .jumboText {
   text-align: center;
-}
-
-.jumboText h1 {
-  text-shadow: 2px 2px 4px gray;
 }
 
 .jumboText p {
@@ -209,11 +204,6 @@ img, iframe {
     flex-wrap: wrap;
   }
 
-  .map {
-    max-width: 300px;
-  }
-}
-
 /* -------BENEFITS------- */
 .starting, .benefits {
   margin: 5%;
@@ -247,4 +237,9 @@ img, iframe {
 .benefits ul {
   margin-left: 30%;
   font-size: 1.2rem;
+}
+
+/* Price/Schedule Page */
+#jumboPrice {
+  opacity: 0.3;
 }
