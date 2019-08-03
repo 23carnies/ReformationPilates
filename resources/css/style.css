@@ -7,7 +7,7 @@ img {
 }
 
 
-/* DIVS TO PUT MEDIA IN move to correct page when filled*/
+/* DIVS TO PUT MEDIA IN move to correct page when filled
 .videoHold {
   background-color: #998099;
   width: 640px;
@@ -21,7 +21,7 @@ img {
   height: 400px;
   padding: 1rem;
   box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
-}
+}   */
 
 @media only screen and (max-width: 400px) {
   .pictureOfKaty {
@@ -34,9 +34,9 @@ ul.container {
   text-align: center;
 }
 
-li.mr-auto {
+/*li.mr-auto {
   display: inline;
-}
+} */
 
 .logo {
   margin: 0 10px;
@@ -44,9 +44,14 @@ li.mr-auto {
 }
 
 .navbar-brand.text {
+  font-family: "Oswald", sans-serif;
   transition: color .5s ease;
   /*text-shadow: 1px 2px 3px #998099;*/
   color: #5d6465;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .8rem;
+  font-weight: 500;
 }
 .text:hover {
   color: #000000;
@@ -72,6 +77,10 @@ body {
 /* -------INDEX------- */
 
 /* Jumbotron original background color #e9ecef */
+#mainPic {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
 
 .jumboContainer {
   display: flex;
@@ -170,11 +179,6 @@ body {
   padding: 1rem;
   margin-bottom: 10px;
 }
-.staffIntro {
-  min-width: 375px;
-  max-width: 700px;
-  padding: 1rem;
-}
 
 /*@media only screen and (max-width: 600px) {
   .staffIntro img {
@@ -192,17 +196,10 @@ img, iframe {
   height: auto;
 }
 
-@media only screen and (max-width: 400px) {
-  .row {
-    justify-content: center;
-  }  /* this is not working */
-}  /* get photo/address centered on small screen*/
-  /* add coupon to see who is coming from website/insta/fb*/
 
-@media only screen and (max-width: 400px) {
-  .contactLogo {
-    flex-wrap: wrap;
-  }
+.couponText {
+  font-size: .5rem;
+}
 
 /* -------BENEFITS------- */
 .starting, .benefits {
