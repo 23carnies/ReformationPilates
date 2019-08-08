@@ -61,7 +61,8 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.6558044752965!2d-84.42821044945897!3d34.02704498051764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50d4d3317fff9%3A0x40794c32a8f993d0!2s4260+Shallowford+Rd%2C+Marietta%2C+GA+30062!5e0!3m2!1sen!2sus!4v1563314968130!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-fluid m-2"></iframe>
       </div>
 <!-- CONTACT FORM -->
-      <form class="mb-3">
+      <form id="contactForm" class="mb-3"method="post" action="contact.php" role="form">
+        <div class="messages"></div>
         <div class="row">
           <div class="form-group col-md-4" role="form">
             <label for="emailAddress"></label>
@@ -91,10 +92,17 @@
             <textarea class="form-control" id="message" rows="3"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="submitBtn" type="submit" class="btn btn-primary p-2">Send Message</button>
       </form>
     </article>
-
+    <!--jQuery for form submission-->
+    <script>
+      $(document).ready(function(){
+          $("#submitBtn").click(function(){
+              $("#myForm").mailto(); // Submit the form
+          });
+      });
+    </script>
 <!-- FOOTER -->
 <footer>
   <nav class="navbar navbar-light navbar-light bg-color-foot" role="navigation">

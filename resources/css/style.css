@@ -76,7 +76,6 @@ body {
 
 /* -------INDEX------- */
 
-/* Jumbotron original background color #e9ecef */
 #mainPic {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -95,14 +94,14 @@ body {
   }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 770px) {
+/*@media only screen and (min-width: 400px) and (max-width: 770px) {
   .diffContainer {
     max-width: 700px;
   }
   .DiffText {
     width: 200%;
   }
-}
+}  */
 
 .jumboText {
   text-align: center;
@@ -133,6 +132,7 @@ body {
 }
 
 .FlexContainer {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -141,20 +141,26 @@ body {
 .diffContainer {
   display: flex;
   flex-wrap: nowrap;
-  margin: 2rem;
-  max-width: 425px;
+  max-width: 500px;
 }
 @media only screen and (max-width: 400px) {
   .diffContainer {
     display: block;
   }
 }
+@media only screen and (max-width: 400px) {
+  .DiffText{
+    display: block;
+    min-width: 300px;
+    margin: 10px 0 0 0;
+  }
+}
 
 .DiffText {
   display: flex;
   align-items: center;
-  width: 200px;
-  margin-left: 1rem;
+  width: 275px;
+  padding: 1rem;
 }
 
 .DiffText p {
