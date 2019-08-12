@@ -6,37 +6,16 @@ img {
   box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
 }
 
-
-/* DIVS TO PUT MEDIA IN move to correct page when filled
-.videoHold {
-  background-color: #998099;
-  width: 640px;
-  height: 360px;
-  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
-}
-
-.pictureOfKaty {
-  background-color: #998099;
-  width: 300px;
-  height: 400px;
-  padding: 1rem;
-  box-shadow: -3px 3px 1.5px gray, 0 2px 5px black;
-}   */
-
 @media only screen and (max-width: 400px) {
   .pictureOfKaty {
     margin: 0 auto;
   }
-} /*center on small screen*/
+}
 
 /* -------HEADER FOOTER-------- */
 ul.container {
   text-align: center;
 }
-
-/*li.mr-auto {
-  display: inline;
-} */
 
 .logo {
   margin: 0 10px;
@@ -46,7 +25,6 @@ ul.container {
 .navbar-brand.text {
   font-family: "Oswald", sans-serif;
   transition: color .5s ease;
-  /*text-shadow: 1px 2px 3px #998099;*/
   color: #5d6465;
   text-transform: uppercase;
   letter-spacing: 2px;
