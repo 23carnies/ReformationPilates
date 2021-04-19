@@ -164,6 +164,11 @@ body {
   margin-bottom: 10px;
 }
 
+.instBadge {
+  width: 100px;
+  height: auto;
+}
+
 /*@media only screen and (max-width: 600px) {
   .staffIntro img {
     width: 25%;
